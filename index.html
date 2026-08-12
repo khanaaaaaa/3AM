@@ -35,6 +35,50 @@
             </div>
         </section>
 
+        <div class="launch-box">
+            <img src="owl.png" class="owl">
+            <div class="launch-right">
+                <p class="section-label">✦ until you can sleep</p>
+                <div class="countdown">
+                    <div class="countdown-unit">
+                        <span id="days">00</span>
+                        <label>days</label>
+                    </div>
+                    <div class="countdown-unit">
+                        <span id="hours">00</span>
+                        <label>hours</label>
+                    </div>
+                    <div class="countdown-unit">
+                        <span id="minutes">00</span>
+                        <label>minutes</label>
+                    </div>
+                    <div class="countdown-unit">
+                        <span id="seconds">00</span>
+                        <label>seconds</label>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const target = new Date('2026-08-24T00:00:00-05:00');
+                function tick() {
+                    const diff = target - Date.now();
+                    if (diff <= 0) {
+                        document.querySelector('.countdown').innerHTML = '<p>we\'re live 🌙</p>';
+                        return;
+                    }
+                    const d = Math.floor(diff / 86400000);
+                    const h = Math.floor((diff % 86400000) / 3600000);
+                    const m = Math.floor((diff % 3600000) / 60000);
+                    const s = Math.floor((diff % 60000) / 1000);
+                    document.getElementById('days').textContent    = String(d).padStart(2, '0');
+                    document.getElementById('hours').textContent   = String(h).padStart(2, '0');
+                    document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+                    document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+                }
+                tick();
+                setInterval(tick, 1000);
+            </script>
+        </div>
         <section class="section" id="about">
             <span class="section-label">✦ what is this</span>
         </section>
