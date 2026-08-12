@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "MyBubbleFont";
+    src: url("./fonts/augiepixel.ttf") format("truetype");
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.logo,
+.button,
+.handwritten {
+    font-family: "MyBubbleFont", sans-serif;
+}
+
+.logo {
+    font-size: 100px;
+    line-height: .8;
+    transform: rotate(-3deg);
+}
+
+h1 {
+    font-size: clamp(70px, 15vw, 180px);
+    margin: 0;
+    letter-spacing: -4px;
+}
+
+h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+.handwritten {
+    font-size: 24px;
+    color: #a77f8c;
+    transform: rotate(-4deg);
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #29272b;
+    color: white;
+    border: 3px solid #29272b;
+    border-radius: 12px;
+    font-size: 22px;
+    text-decoration: none;
+    transform: rotate(-2deg);
+    box-shadow: 5px 5px 0 #c8bfd0;
+    transition: .2s ease;
+}
+
+.button:hover {
+    transform: rotate(2deg) traslateY(-4px);
+}
