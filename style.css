@@ -10,7 +10,7 @@
 
 body {
     margin: 0;
-    background: #101014;
+    background: #101014 url('assets/background.jpg') center/cover no-repeat fixed;
     color: #f4f0e8;
 }
 
@@ -20,6 +20,8 @@ body {
     gap: 24px;
     padding: 18px 36px;
     border-bottom: 2px solid #29272b;
+    background: rgba(16, 16, 20, 0.55);
+    backdrop-filter: blur(8px);
 }
 
 .logo {
@@ -52,18 +54,18 @@ body {
 .hero-inner {
     max-width: 680px;
     margin: 0 auto;
-    padding: 90px 32px;
+    padding: 32px 32px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 8px;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .section {
@@ -72,6 +74,8 @@ body {
     padding: 32px;
     border: 2px solid #393642;
     border-radius: 3px 10px 5px 8px / 8px 3px 10px 4px;
+    background: rgba(16, 16, 20, 0.55);
+    backdrop-filter: blur(8px);
 }
 
 .section-label {
@@ -83,8 +87,8 @@ body {
 
 h1 {
     color: #f7e9a8;
-    font-size: 64px;
-    line-height: 1.1;
+    font-size: 52px;
+    line-height: 1;
     margin: 0;
     text-shadow: 5px 5px 0 #6f6387;
     transform: rotate(-1.5deg);
@@ -100,8 +104,8 @@ h2 span {
 
 .big-copy {
     color: #f4f0e8 !important;
-    font-size: 24px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.4;
     margin: 0;
 }
 
@@ -161,16 +165,18 @@ h2 span {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     max-width: 680px;
-    margin: 48px auto;
-    padding: 32px;
+    margin: 4px 0;
+    padding: 14px 20px;
     border: 2px solid #393642;
     border-radius: 3px 10px 5px 8px / 8px 3px 10px 4px;
+    background: rgba(16, 16, 20, 0.55);
+    backdrop-filter: blur(8px);
 }
 
 .owl {
-    width: 120px;
+    width: 60px;
     image-rendering: pixelated;
     flex-shrink: 0;
 }
@@ -181,10 +187,44 @@ h2 span {
     gap: 12px;
 }
 
-.countdown {
+.clock-display {
     display: flex;
-    gap: 24px;
+    align-items: center;
+    gap: 2px;
+    font-size: 36px;
+    color: #f7e9a8;
+    text-shadow: 3px 3px 0 #6f6387;
+    line-height: 1;
+    letter-spacing: 2px;
 }
+
+.clock-display span {
+    display: inline-block;
+    width: 2ch;
+    text-align: center;
+}
+
+.clock-sep {
+    color: #6f6387;
+    width: auto !important;
+    margin: 0 2px;
+}
+
+.clock-labels {
+    display: flex;
+    gap: 0;
+    margin-top: 4px;
+}
+
+.clock-labels span {
+    font-size: 12px;
+    color: #a89bbd;
+    letter-spacing: 1px;
+    width: calc(2ch + 18px);
+    text-align: center;
+}
+
+
 
 .countdown-unit {
     display: flex;
@@ -267,6 +307,8 @@ footer {
     margin: 48px auto;
     padding: 32px;
     border-top: 2px solid #29272b;
+    background: rgba(16, 16, 20, 0.55);
+    backdrop-filter: blur(8px);
 }
 
 footer ul {
