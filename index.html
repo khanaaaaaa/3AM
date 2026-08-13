@@ -58,26 +58,6 @@
                     </div>
                 </div>
             </div>
-            <script>
-                const target = new Date('2026-08-24T23:59:59-05:00');
-                function tick() {
-                    const diff = target - Date.now();
-                    if (diff <= 0) {
-                        document.querySelector('.countdown').innerHTML = '<p>we\'re live 🌙</p>';
-                        return;
-                    }
-                    const d = Math.floor(diff / 86400000);
-                    const h = Math.floor((diff % 86400000) / 3600000);
-                    const m = Math.floor((diff % 3600000) / 60000);
-                    const s = Math.floor((diff % 60000) / 1000);
-                    document.getElementById('days').textContent    = String(d).padStart(2, '0');
-                    document.getElementById('hours').textContent   = String(h).padStart(2, '0');
-                    document.getElementById('minutes').textContent = String(m).padStart(2, '0');
-                    document.getElementById('seconds').textContent = String(s).padStart(2, '0');
-                }
-                tick();
-                setInterval(tick, 1000);
-            </script>
         </div>
         <section class="section" id="about">
             <span class="section-label">✦ how it works</span>
@@ -138,5 +118,41 @@
                 </div>
             </div>
         </section>
+
+        <section class="section" id="faq">
+            <span class="section-label">✦ questions</span>
+            <h2>frequently asked</h2>
+            <p class="big-copy">stuff people usually ask before jumping in.</p>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q" data-faq>is this free?<span class="faq-chevron">▾</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">yep, totally free, same as every other Hack Club event.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" data-faq>what can I ship?<span class="faq-chevron">▾</span></button>
+                <div class="faq-a"><div class="faq-a-inner">Pick something dark themed to build, a site, a tool, a game, whatever you're into. Hardware works too, and get real rewards for actually finishing it.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" data-faq>Am I eligible?<span class="faq-chevron">▾</span></button>
+                <div class="faq-a"><div class="faq-a-inner">If you're 13 to 18, you're in, no matter where you live.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" data-faq>Do I have to code at exactly 3 AM?<span class="faq-chevron">▾</span></button>
+                <div class="faq-a"><div class="faq-a-inner">Nah, "3 AM" is more of a vibe than a schedule. Code whenever works for you during the event.</div></div>
+            </div>
+        </section>
+    <footer>
+        <ul>
+            <li><img src="https://cdn.hackclub.com/019d730b-a931-785f-a435-c0b3eba933ce/puQ5T1DQN2FkLKxkse1UyxSH_MfbowlTpN71hRGDrvo" alt="Hack Club Logo" /></li>
+            <li><a href="https://hackclub.com/privacy-and-terms#hack-club-standard-terms-and-conditions" target="_blank" rel="noopener noreferrer">TOS</a></li>
+            <li><a href="https://hackclub.com/privacy-and-terms#hack-club-privacy-notice" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+            <li><a href="https://forms.hackclub.com/bounty" target="_blank" rel="noopener noreferrer">Fulfillment Bounty</a></li>
+            <li><a href="https://hackclub.com" target="_blank">Hack Club</a></li>
+            <li><a href="https://hackclub.slack.com/app_redirect?channel=3am" target="_blank" rel="noopener noreferrer">Slack</a></li>
+            <li><a href="https://hackatime.hackclub.com" target="_blank">Hackatime</a></li>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
     </body>
 </html>
