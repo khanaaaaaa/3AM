@@ -14,6 +14,15 @@ body {
     color: #f4f0e8;
 }
 
+.ysws-credit {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    color: #81768f;
+    background: rgba(16,16,20,0.7);
+    letter-spacing: 1px;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -30,7 +39,14 @@ body {
     text-decoration: none;
     text-shadow: 3px 3px 0 #6f6387;
     transform: rotate(-2deg);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-flag {
+    height: 32px;
+    image-rendering: pixelated;
 }
 
 .nav-links {
@@ -57,7 +73,7 @@ body {
     padding: 32px 32px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 .hero-buttons {
@@ -95,6 +111,24 @@ h1 {
     display: inline-block;
 }
 
+.hero-title-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.hero-flag {
+    height: 52px;
+    image-rendering: pixelated;
+}
+
+.hero-credit {
+    font-size: 14px;
+    color: #81768f;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
 h2 span {
     color: #d6b8dc;
     text-decoration: underline;
@@ -104,8 +138,8 @@ h2 span {
 
 .big-copy {
     color: #f4f0e8 !important;
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 20px;
+    line-height: 1.6;
     margin: 0;
 }
 
@@ -118,7 +152,6 @@ h2 span {
 .scribble {
     color: #d7a9c5;
     font-size: 20px;
-    transform: rotate(-2deg);
     display: inline-block;
 }
 .button {
@@ -223,8 +256,6 @@ h2 span {
     width: calc(2ch + 18px);
     text-align: center;
 }
-
-
 
 .countdown-unit {
     display: flex;
@@ -335,6 +366,38 @@ footer a {
 
 footer a:hover {
     color: #d6b8dc;
+}
+
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.reward-item {
+    background: #13111a;
+    border: 1.5px solid #393642;
+    border-radius: 3px 10px 5px 8px / 8px 3px 10px 4px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #f4f0e8;
+    text-align: center;
+}
+
+.reward-item img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+
+.reward-price {
+    font-size: 13px;
+    color: #f7e9a8;
 }
 
 .faq-list {

@@ -29,7 +29,10 @@ function next() {
         setTimeout(() => {
             splash.style.transition = 'opacity 1s ease';
             splash.style.opacity = 0;
-            setTimeout(() => window.location.href = 'index.html', 1000);
+            setTimeout(() => {
+                sessionStorage.setItem('splashSeen', '1');
+                window.location.href = 'index.html';
+            }, 1000);
         }, 1400);
     }
 }
