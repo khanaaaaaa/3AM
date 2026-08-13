@@ -111,3 +111,103 @@ body {
     transform: rotate(-1deg);
     display: inline-block;
 }
+
+.user-badge {
+    font-size: 20px;
+    color: #d6b8dc;
+    border: 2px dashed #81768f;
+    padding: 8px 16px;
+    border-radius: 3px 10px 5px 8px / 8px 3px 10px 4px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 140px;
+    background: #13111a;
+    border: 2px solid #393642;
+    border-radius: 3px 10px 5px 8px / 8px 3px 10px 4px;
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 4px 4px 0 #29272b;
+}
+
+.card-accent {
+    border-color: #6f6387;
+    box-shadow: 4px 4px 0 #6f6387;
+}
+
+.card-label {
+    font-size: 15px;
+    color: #a89bbd;
+    letter-spacing: 1px;
+}
+
+.card-value {
+    font-size: 40px;
+    color: #f7e9a8;
+    text-shadow: 3px 3px 0 #6f6387;
+    line-height: 1;
+}
+
+.card-sub {
+    font-size: 16px;
+    color: #81768f;
+}
+
+.selection-box {
+    background: #13111a;
+    border: 2px solid #393642;
+    border-radius: 3px 10px 5px 8px / 8px 3px 10px 4px;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section-label {
+    color: #a89bbd;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #101014;
+    border: 1px solid #29272b;
+    border-radius: 3px 8px 4px 6px / 6px 3px 8px 3px;
+}
+
+.project-name {
+    font-size: 20px;
+    color: #f4f0e8;
+}
+
+.project-tag {
+    font-size: 16px;
+    color: #a8d8a8;
+}
+
+.project-tag.pending {
+    color: #d7a9c5;
+}
+
+.project-tag.pending {
+    color: #d7a9c5;
+}

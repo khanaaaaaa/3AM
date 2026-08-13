@@ -35,8 +35,16 @@
 
 .shop-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+}
+
+@media (min-width: 900px) {
+    .shop-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1400px) {
+    .shop-grid { grid-template-columns: repeat(5, 1fr); }
 }
 
 .shop-item {
@@ -145,4 +153,70 @@
     opacity: 0.5;
     cursor: not-allowed;
     border-style: dashed;
+}
+
+.beans-banner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: #1a1625;
+    border: 2px solid #6f6387;
+    border-radius: 3px 10px 5px 8px / 8px 3px 10px 4px;
+    padding: 20px 28px;
+    box-shadow: 5px 5px 0 #6f6387;
+}
+
+.beans-jar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.beans-emoji {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    filter: drop-shadow(2px 2px 0 #6f6387)
+}
+
+.beans-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.beans-count {
+    font-size: 52px;
+    color: #f7e9a8;
+    text-shadow: 3px 3px 0 #6f6387;
+}
+
+.beans-word {
+    font-size: 18px;
+    color: #a89bbd;
+    letter-spacing: 2px;
+}
+
+.beans-divider {
+    width: 2px;
+    height: 60px;
+    background: #393642;
+    border-radius: 2px;
+}
+
+.beans-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.beans-tagline {
+    font-size: 20px;
+    color: #deb8dc;
+}
+
+.beans-sub {
+    font-size: 16px;
+    color: #81768f;
 }

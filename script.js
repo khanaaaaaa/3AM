@@ -26,7 +26,7 @@ document.querySelectorAll('[data-faq').forEach(btn => {
     });
 });
 
-const owlFrames = ['owl.png', 'owl1.png'];
+const owlFrames = ['assets/owl.png', 'assets/owl1.png'];
 let owlFrame = 0;
 const owlImg = document.querySelector('.owl');
 setInterval(() => {
