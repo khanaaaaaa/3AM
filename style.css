@@ -205,3 +205,56 @@ h2 span {
     color: #a89bbd;
     letter-spacing: 2px;
 }
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.step {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #29272b;
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+.step-num {
+    font-size: 18px;
+    color: #393642;
+    letter-spacing: 2px;
+    padding-top: 4px;
+    flex-shrink: 0;
+}
+
+.step-title {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.step-title h3 {
+    margin: 0;
+    font-size: 28px;
+    color: #f4f0e8;
+}
+
+.step-body p {
+    margin: 0;
+    font-size: 22px;
+    color: #c8c3cc;
+    line-height: 1.5;
+}
+
+.step-body .hand-note {
+    font-size: 20px;
+    color: #a89bbd;
+    transform: none;
+    display: block;
+    margin-top: 4px;
+}
