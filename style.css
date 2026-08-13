@@ -198,6 +198,9 @@ h2 span {
     color: #f7e9a8;
     text-shadow: 4px 4px 0 #6f6387;
     line-height: 1;
+    display: inline-block;
+    width: 2ch;
+    text-align: center;
 }
 
 .countdown-unit label {
