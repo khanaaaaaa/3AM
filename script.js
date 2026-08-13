@@ -25,3 +25,11 @@ document.querySelectorAll('[data-faq').forEach(btn => {
         if (!isOpen) item.classList.add('open');
     });
 });
+
+const owlFrames = ['owl.png', 'owl1.png'];
+let owlFrame = 0;
+const owlImg = document.querySelector('.owl');
+setInterval(() => {
+    owlFrame = (owlFrame + 1) % owlFrames.length;
+    owlImg.src = owlFrames[owlFrame];
+}, 500);

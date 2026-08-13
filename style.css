@@ -337,17 +337,19 @@ footer a:hover {
 .faq-a {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows .2s ease;
+    transition: grid-template-rows .2s ease, padding .2s ease;
+    padding-bottom: 0;
 }
 
 .faq-item.open .faq-a {
     grid-template-rows: 1fr;
+    padding-bottom: 18px;
 }
 
 .faq-a-inner {
     overflow: hidden;
+    min-height: 0;
     font-size: 20px;
     color: #c8c3cc;
     line-height: 1.6;
-    padding-bottom: 18px;
 }
