@@ -4,7 +4,7 @@ Demo: https://khanaaaaaa.github.io/3AM/
 
 ## What It Is
 
-My redesign of the 3AM YSWS site :)
+My redesign of the 3AM YSWS site :) Just a more fun version of the version 1.0 of the site.
 
 ## Why I Made It
 
